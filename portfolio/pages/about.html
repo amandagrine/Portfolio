@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="portfolio.css">
+    </head>
+    <body>
+        <div id="navbar"></div>
+
+        <script>
+        fetch("../navbar.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("navbar").innerHTML = data;
+            });
+        </script>
+
+        <header>About me!</header>
+        <img class = "about-pic" src = "../media/about.jpg"  alt="About Picture">
+
+        <div class = "text" id = "textabtme">
+            My name is Amanda Grine and I am passionate about art, music and video. I am from Latvia, but right 
+            now I’m studying <a href="https://www.ul.ie/courses/bachelor-science-music-media-performance-technology?utm_source=google&utm_medium=cpc&utm_campaign=cp_ul_ug_fy26_recruitment_search&utm_stage=conversion&utm_objective=conversions&utm_content=music_media&utm_format=search&utm_lang=en&utm_term=music_media&utm_id=cp_ul_ug_fy26_recruitment_search_conversion_conversions&gad_source=1&gad_campaignid=22952131888&gbraid=0AAAABA2kFBV2U1X10iw6lUzWGO5rpHNsA&gclid=CjwKCAiAkbbMBhB2EiwANbxtbUOPsIwLnUIWuPKrAg31r6QMFwxIxZfLqg6BLblSIYIooraYUQ1TJBoC5-sQAvD_BwE"
+            target = "_blank" rel = "noopener noreferrer">Music, Media and Performance Technology</a> at University of Limerick in Ireland.<br><br>
+
+            I have been interested in art for as long as I can remember. In kindergarten, I was already attending 
+            art classes, which led me to enroll in an art school as an extracurricular
+            activity. I have also participated in costume design events, where I always aim to use materials found 
+            at home. Finding creative ways to reuse everyday items is something I
+            genuinely enjoy, and using sustainable materials is important to me. However, at the moment I'm mainly 
+            focusing on graphic design and creating art digitally.<br><br>
+
+            Alongside my artistic background, I attended a secondary school that specializes in STEM subjects, and 
+            I studied higher-level math and physics, which has given me a strong technical base.<br><br>
+
+            Another area that has always grabbed my attention is music and sound. I have begun exploring sound design, working mainly 
+            with Ableton and Max/MSP. Additionally, I can play multiple musical instruments, 
+            like piano, guitar and drums, and I have also sung in a choir. <br><br>
+
+            On this website I am publishing various works and projects that I have created during high school, university 
+            and on my free time, which connect to art, design and sound. I wouldn’t call myself a professional in these 
+            areas yet, however I am eager to challenge myself, expand my knowledge and acquire new skills.
+        </div>
+
+        <footer>
+            <p class = "contact-me"><strong>Contact me:</strong></p>
+            <p>grine.amanda@gmail.com</p>
+        </footer>
+                    
+    </body>
+</html>

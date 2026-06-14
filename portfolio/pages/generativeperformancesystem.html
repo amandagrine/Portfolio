@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="portfolio.css">
+    </head>
+    <body>
+        <div id="navbar"></div>
+
+        <script>
+        fetch("../navbar.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("navbar").innerHTML = data;
+            });
+        </script>
+
+        <header>Generative Performance System</header>
+        <img class = "about-pic" src = "../media/generativeperformance.png"  alt="Ableton Picture">
+         <div class = "text">
+            I created a generative performance system in Ableton, using both looped 
+            audio recordings and MIDI instruments. <br><br>
+            I built a harmonic melody in C Major using MIDI effects like Scale and generated clips, 
+            and added randomness with Ableton’s Generate tool and Expression Control. 
+            Clip behavior was shaped using Follow Actions to create evolving and unpredictable sequences.
+            I also incorporated atmospheric audio, and warped it to fit the tempo. It was enhanced with effects 
+            like echo, panning, and automated envelopes.
+            Then I added bass layers, percussion and an Operator synth structured with Follow Actions and 
+            audio effects to create evolving patterns. <br><br>
+            For performance, I mapped key parameters to a MIDI controller. By adjusting these values with 
+            the controller, I changed the atmosphere throughout the song and created smoother transitions 
+            or introductions of instruments.<br><br><br>
+
+        
+            <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay; encrypted-media" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2339103899&color=%233c3738&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/amamamanda0017" title="Amanda" target="_blank" style="color: #cccccc; text-decoration: none;">Amanda</a> · <a href="https://soundcloud.com/amamamanda0017/generative-performance-system" title="Generative Performance System" target="_blank" style="color: #cccccc; text-decoration: none;">Generative Performance System</a></div>
+
+        </div>
+         <p class = "back"><a href = "music.html">Go Back</a></p>
+
+         <footer>
+            <p class = "contact-me"><strong>Contact me:</strong></p>
+            <p>grine.amanda@gmail.com</p>
+        </footer>
+    </body>
+</html>

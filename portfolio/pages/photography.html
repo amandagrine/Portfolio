@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="portfolio.css">
+    </head>
+    <body>
+        <div id="navbar"></div>
+
+        <script>
+        fetch("../navbar.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("navbar").innerHTML = data;
+            });
+        </script>
+
+        <header>Photography</header>
+         <div class = "text">
+           Here are some photos I took and then edited in Affinity Photo, 
+           that are based on the theme of Time.<br><br>
+
+        The idea of the first photo was to illustrate the feeling of being 
+        stuck in time. The image depicts how everybody else’s lives seem to 
+        be going forward, whereas the girl in the middle feels trapped, unable 
+        to find her place in the world.<br><br>
+
+        Next photo represents the “power of timing”. I had this unexpected 
+        opportunity to take a photo of two cats – one painted and one real cat 
+        – who were sitting in the same position, which shows the idea of being 
+        in the right place at the right time.<br><br>
+
+        The third photo was captured in a graveyard, showing tombstones of 
+        many different people who used to live here. It depicts that everyone’s 
+        time on Earth is limited, symbolizing that time is finite.<br><br>
+
+        
+            <img class = "about-pic" src = "../media/time1.jpg"  alt="Time1">
+            <br>
+        <div class = "gallery">
+            <img class = "pic-gallery" src = "../media/time2.jpg"  alt="Time2">
+            <img class = "pic-gallery" src = "../media/time3.jpg"  alt="Time3">
+        </div>
+
+        </div>
+         <p class = "back"><a href = "art.html">Go Back</a></p>
+
+         <footer>
+            <p class = "contact-me"><strong>Contact me:</strong></p>
+            <p>grine.amanda@gmail.com</p>
+        </footer>
+    </body>
+</html>
