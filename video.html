@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="portfolio.css">
+    </head>
+    <body>
+        <div id="navbar"></div>
+
+        <script>
+        fetch("../navbar.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("navbar").innerHTML = data;
+            });
+        </script>
+
+        <header>Video</header>
+
+        <div class = "text">
+            <div class="row">
+                <div class="column">
+                     <img class = "columnpic" src = "../media/podcast.png"  alt="Album Cover">
+                </div>
+                <div class="column">
+                    <h2>AI in Music</h2>
+                    <p> My coursemates and I recorded and edited a video on a topic related to 
+            digital media. The topic we chose was AI in music.
+
+            As AI is becoming more and more popular, platforms like Spotify have 
+            started creating AI artists, known as ghost artists. Their music is being 
+            featured in major playlists, therefore...
+</p>
+                    <p><a href = "podcast.html">Keep reading</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class = "text">
+            <div class="row">
+                <div class="column">
+                     <img class = "columnpic" src = "../media/claymation.jpg"  alt="Moon">
+                </div>
+                <div class="column">
+                    <h2>Claymation</h2>
+                    <p>I have always been interested in movies and animation, so 
+                    I tried to make a stop motion short film “The Seed”. The process involved 
+                    script writing, character design, set building, frame-by frame filming, 
+                    and editing— merging storytelling, visual art, and technical animation. I didn’t have...</p>
+                    <p><a href = "claymation.html">Keep reading</a></p>
+                </div>
+            </div>
+        </div>
+            
+         <footer>
+            <p class = "contact-me"><strong>Contact me:</strong></p>
+            <p>grine.amanda@gmail.com</p>
+        </footer>
+    </body>
+</html>

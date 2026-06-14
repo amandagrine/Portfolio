@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="portfolio.css">
+    </head>
+    <body>
+        <div id="navbar"></div>
+
+        <script>
+        fetch("../navbar.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("navbar").innerHTML = data;
+            });
+        </script>
+
+        <header>Redesigning an Album cover</header>
+        <img class = "about-pic" src = "/media/albumcover.png"  alt="Album Cover">
+         <div class = "text">
+            I redesigned the cover of David Bowie’s album "Reality", designed by Jonathan Barnbrook 
+            and Rex Ray. The songs on this album follow the theme of a shifting and abstract reality, 
+            which has been creatively illustrated on the original cover of the album, depicting David 
+            Bowie as a character from an animation. Although I find the overall composition of the album 
+            unappealing, which is why I wanted to redesign it, the concept of portraying the theme of a 
+            fake and incomprehensible reality as an animation is very clever, therefore I kept this idea 
+            when creating my original design of the album cover.<br><br>
+
+            This album is also deeply connected to New York City because it was influenced by Bowie’s 
+            life there, so I decided to depict a scenic view of New York on the cover. To illustrate the 
+            main focus of the album – reality being abstract with Bowie trying to find his place in it – 
+            I illustrated Bowie, as an animated character, falling out of the city, therefore dramatizing 
+            the concept of the album even more.<br><br>
+
+            The cover was redesigned in Affinity.<br><br>
+
+            <h3>Original Cover by Jonathan Barnbrook and Rex Ray:</h3>
+            <div class = "originalcover">
+            <img class = "about-pic-half" src = "/media/original album rear.jpg"  alt="Album Cover">
+            <img class = "about-pic-half" src = "/media/original album cover.jpg"  alt="Album Cover">
+            </div>
+
+            <br>
+            <h3>Redesigned cover by me:</h3>
+            <img class = "about-pic" src = "/media/redesigned.png"  alt="Album Cover">
+         </div>
+
+         <p class = "back"><a href = "art.html">Go Back</a></p>
+
+         <footer>
+            <p class = "contact-me"><strong>Contact me:</strong></p>
+            <p>grine.amanda@gmail.com</p>
+        </footer>
+    </body>
+</html>

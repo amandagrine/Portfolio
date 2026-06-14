@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="portfolio.css">
+    </head>
+    <body>
+        <div id="navbar"></div>
+
+        <script>
+        fetch("../navbar.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("navbar").innerHTML = data;
+            });
+        </script>
+
+        <header>AI in Music</header>
+         <div class = "text">
+            My coursemates and I recorded and edited a video on a topic related to 
+            digital media. The topic we chose was AI in music.<br><br>
+
+            As AI is becoming more and more popular, platforms like Spotify have 
+            started creating AI artists, known as ghost artists. Their music is being 
+            featured in major playlists, therefore getting more attention from Spotify users. 
+            However, this creates a debate whether songs made entirely by AI should gain 
+            public’s attention, as they show lack of creativity and emotion, and pose economic 
+            threats to human artists.<br><br>
+
+            Therefore, we decided to create an imaginary podcast, where the guest is a small 
+            Spotify artist, who shares his view on AI artists in music platforms.<br><br>
+        
+            <div class = "video">
+                <iframe 
+                    src="https://www.youtube.com/embed/wXkneuqlYGw"
+                    frameborder="0"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+         <p class = "back"><a href = "video.html">Go Back</a></p>
+
+         <footer>
+            <p class = "contact-me"><strong>Contact me:</strong></p>
+            <p>grine.amanda@gmail.com</p>
+        </footer>
+    </body>
+</html>
