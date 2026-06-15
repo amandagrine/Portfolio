@@ -95,14 +95,14 @@ audio {
 }
 
 .pic-gallery {
-    width: 45%;
+    width: 48%;
     height: auto;
     display: block;
 }
 
 .gallery {
     display: flex;
-    gap: 10%;
+    gap: 4%;
 }
 
 .originalcover {
