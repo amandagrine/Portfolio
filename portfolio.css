@@ -2,7 +2,7 @@
 body{
     margin: 0;
     font-family: Georgia, Arial;
-    background-color: green;
+    background-color: rgb(27, 27, 27);
     color: white;
     font-size: 18px;
     line-height: 1.5;
@@ -95,21 +95,14 @@ audio {
 }
 
 .pic-gallery {
-    width: 49%;
+    width: 45%;
     height: auto;
     display: block;
-}
-
-.pic-gallery-right{
-    width: 49%;
-    height: auto;
-    display: block;
-    align: right;
 }
 
 .gallery {
     display: flex;
-    gap: 5px;
+    gap: 10%;
 }
 
 .originalcover {
