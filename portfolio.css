@@ -2,7 +2,7 @@
 body{
     margin: 0;
     font-family: Georgia, Arial;
-    background-color: pink;
+    background-color: rgb(27,27,27);
     color: white;
     font-size: 18px;
     line-height: 1.5;
@@ -16,7 +16,7 @@ nav {
     display: flex;
     background-color:black;
     color: white;
-    padding: 2px 20vw;
+    margin: 0px;
 }
 
 .nav-container {
