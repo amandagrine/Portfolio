@@ -147,6 +147,7 @@ footer{
     text-align: center;
     padding : 40px;
     bottom : 0;
+    clear: both;
 }
 
 footer .contact-me {
