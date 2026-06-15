@@ -1,3 +1,6 @@
+html, body {
+    height: 100%;
+}
 
 body{
     margin: 0;
@@ -6,6 +9,10 @@ body{
     color: white;
     font-size: 18px;
     line-height: 1.5;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 * {
@@ -142,12 +149,11 @@ h2 {
 }
 
 footer{
-    background-color : #e1e1e1;;
-    color : black;
+    margin-top: auto;
+    background-color: #e1e1e1;
+    color: black;
     text-align: center;
-    padding : 40px;
-    bottom : 0;
-    clear: both;
+    padding: 40px;
 }
 
 footer .contact-me {
