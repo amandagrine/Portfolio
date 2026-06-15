@@ -12,6 +12,13 @@ body{
   box-sizing: border-box;
 }
 
+nav {
+    display: flex;
+    background-color:black;
+    color: white;
+    padding: 2px 20vw;
+}
+
 .nav-container {
     max-width: 900px;
     width: 90%;
@@ -32,15 +39,6 @@ header {
     font-weight: bold;
     padding: 50px 0 20px;
     font-size: 50px;
-}
-
-nav {
-    display: flex;
-    background-color:black;
-    color: white;
-    margin: 0px;
-    padding: 2px 20vw;
-    gap: 7vh;
 }
 
 .nav-btn {
