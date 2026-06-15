@@ -88,21 +88,20 @@ audio {
 }
 
 .about-pic-half {
-    width: 30vw;
-    margin: 0 auto;
+    width: 50%;
     height: auto;
+    display: block;
 }
 
 .pic-gallery {
-    width: 29vw;
-    margin: 0 auto;
+    width: 49%;
     height: auto;
     display: block;
 }
 
 .gallery {
     display: flex;
-    gap: 2vw;
+    gap: 5px;
 }
 
 .originalcover {
@@ -111,8 +110,7 @@ audio {
 
 .columnpic {
     display: block;
-    width: 29vw;
-    margin: 0;
+    width: 100%;
     height: auto;
 }
 
@@ -167,8 +165,7 @@ h2 {
 .back{
     display: block;
     text-align: justify;
-    width: 60vw;
-    margin: 0 auto;
+    width: 100%;
     height: auto;
     padding-bottom: 30px;
 }
