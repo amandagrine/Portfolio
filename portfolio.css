@@ -17,7 +17,7 @@ nav {
     background-color:black;
     color: white;
     margin: 0px;
-    padding: 2px 18vw;
+    padding: 2px 20vw;
     gap: 7vh;
 }
 
@@ -66,13 +66,13 @@ button:hover {
 
 header {
     font-weight: bold;
-    padding: 50px 18vw 20px;
+    padding: 50px 20vw 20px;
     font-size: 50px;
 }
 
 .about-pic, video {
     display: block;
-    width: 64vw;
+    width: 60vw;
     margin: 0 auto;
     height: auto;
 }
@@ -83,13 +83,13 @@ audio {
 }
 
 .about-pic-half {
-    width: 32vw;
+    width: 30vw;
     margin: 0 auto;
     height: auto;
 }
 
 .pic-gallery {
-    width: 31vw;
+    width: 29vw;
     margin: 0 auto;
     height: auto;
     display: block;
@@ -97,7 +97,7 @@ audio {
 
 .gallery {
     display: flex;
-    gap: 1vw;
+    gap: 2vw;
 }
 
 .originalcover {
@@ -106,7 +106,7 @@ audio {
 
 .columnpic {
     display: block;
-    width: 30vw;
+    width: 29vw;
     margin: 0;
     height: auto;
 }
@@ -114,7 +114,7 @@ audio {
 .text {
     display: block;
     text-align: justify;
-    width: 64vw;
+    width: 60vw;
     margin: 0 auto;
     height: auto;
     padding: 20px 0px 70px;
@@ -163,7 +163,7 @@ h2 {
 .back{
     display: block;
     text-align: justify;
-    width: 64vw;
+    width: 60vw;
     margin: 0 auto;
     height: auto;
     padding-bottom: 30px;
@@ -174,7 +174,7 @@ h2 {
 }
 
 .video {
-    max-width: 64vw;   
+    max-width: 60vw;   
     margin: 40px auto;  
 }
 
