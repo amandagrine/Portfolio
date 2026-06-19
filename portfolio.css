@@ -180,6 +180,7 @@ footer .contact-me {
 .column-three {
   float: left;
   width: 33.33%;
+    gap: 10px;
 }
 
 .row-three:after {
