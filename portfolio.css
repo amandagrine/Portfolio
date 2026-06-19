@@ -185,10 +185,15 @@ footer .contact-me {
 }
 
 
-.column-three {
-    float: left;
-    width: 33.33%;
+.row-three {
+    display: flex;
     gap: 10px;
+}
+
+.column-three {
+    flex: 1;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
