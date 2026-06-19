@@ -176,6 +176,18 @@ footer .contact-me {
   clear: both;
 }
 
+
+.column-three {
+  float: left;
+  width: 33.33%;
+}
+
+.row-three:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 h2 {
     margin: 0;
 }
