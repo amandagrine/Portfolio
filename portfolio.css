@@ -91,6 +91,10 @@ button:hover {
     cursor: pointer;
 }
 
+a:hover {
+    background-color: rgb(50,50,50);
+}
+
 .about-pic, video {
     display: block;
     width: 100%;
