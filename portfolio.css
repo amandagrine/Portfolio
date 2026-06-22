@@ -35,7 +35,6 @@ nav {
 
     display: flex;
     gap: 3rem;
-    position: fixed;
 }
 
 .container {
