@@ -42,6 +42,8 @@ nav {
     margin: 0 auto;
 }
 
+
+
 header {
     font-weight: bold;
     padding: 50px 0 20px;
@@ -55,6 +57,29 @@ header {
   padding: 15px 0px;
   font-size: inherit;
   font-family: inherit;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 8%;
+}
+
+.hero-text{
+    flex:1;
+}
+
+.hero-text h3{
+    margin-bottom:20px;
+    letter-spacing:2px;
+}
+
+.hero-text h1{
+    font-size:5rem;
+    line-height:0.95;
+    margin-bottom:30px;
 }
 
 .dropdown-content {
