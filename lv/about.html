@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="Latvia">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="../portfolio.css">
+    </head>
+    <body>
+        <div id="navbar"></div>
+
+        <script>
+        fetch("navbar.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("navbar").innerHTML = data;
+            });
+        </script>
+
+        <header class = "container" >Par mani!</header>
+        <img class = "about-pic container" src = "/Portfolio/media/about.jpg"  alt="About Picture">
+
+        <div class = "text container" id = "textabtme">
+            Mani sauc Amanda Grīne un es aizraujos ar mākslu, mūziku un video veidošanu. Es esmu no Latvijas, taču šobrīd
+            studēju <a href="https://www.ul.ie/courses/bachelor-science-music-media-performance-technology?utm_source=google&utm_medium=cpc&utm_campaign=cp_ul_ug_fy26_recruitment_search&utm_stage=conversion&utm_objective=conversions&utm_content=music_media&utm_format=search&utm_lang=en&utm_term=music_media&utm_id=cp_ul_ug_fy26_recruitment_search_conversion_conversions&gad_source=1&gad_campaignid=22952131888&gbraid=0AAAABA2kFBV2U1X10iw6lUzWGO5rpHNsA&gclid=CjwKCAiAkbbMBhB2EiwANbxtbUOPsIwLnUIWuPKrAg31r6QMFwxIxZfLqg6BLblSIYIooraYUQ1TJBoC5-sQAvD_BwE"
+            target = "_blank" rel = "noopener noreferrer">Mūziku, Mēdijus un Performanču Tehnoloģijas</a> Limerikas universitātē, Īrijā.<br><br>
+
+            Mākslā esmu bijusi ieinteresēta visu savu mūžu. Jau bērnudārzā apmeklēju mākslas nodarbības, kas ļāva man
+            iestāties un pabeigt Ādažu mākslas skolu. Esmu arī piedalījusies kostīmu dizainēšanas pasākumos, kuros es
+            vienmēr cenšos lietot materiālus, kas man jau pieejami mājās. Man ļoti patīk atrast radošas pieejas tam, 
+            kā atkārtoti izmantot dažādus priekšmetus, lai izveidotu kaut ko jaunu, un ilgtspējīgu materiālu izmantošana
+            man ir  svarīga. Tomēr pašreiz pārsvarā fokusējos tieši uz grafisko dizainu un mākslu, kas pieejama digitāli.
+            <br><br>
+
+            Vēl mani vienmēr ir piesaistījusi mūzika un skaņa. Es esmu sākusi apgūt skaņas dizainu, un pārsvarā strādāju ar tādām
+            aplikācijām, kā Ableton un Max/MSP. Papildus tam es arī māku spēlēt vairākus mūzikas instrumentus, kā klavieres, ģitāru un
+            bungas, un esmu dziedājusi korī.
+            <br><br>
+            Šajā mājaslapā es publicēju dažādus darbiņus un projektus, ko esmu veikusi vidusskolas laikā, universitāte un savos
+            brīvajos brīžos, kas saistās ar mākslu, dizainu un mūziku. Es vēl nesauktu sevi par profesionāli šajās jomās, taču
+            es esmu gatava sevi izaicināt, papildināt savas zināšanas un iegūt jaunas prasmes.
+        </div>
+
+        <footer>
+            <p class = "contact-me"><strong>Contact me:</strong></p>
+            <p>grine.amanda@gmail.com</p>
+        </footer>
+                    
+    </body>
+</html>
