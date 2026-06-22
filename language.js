@@ -1,20 +1,26 @@
 const btn = document.getElementById("languageBtn");
 
 const path = window.location.pathname;
+const base = "/Portfolio/";
 
 if (path.includes("/lv/")) {
+
+    // Currently on Latvian page
     btn.textContent = "EN";
 
     btn.onclick = () => {
-        const page = path.split("/lv/")[1];
-        window.location.href = "../" + page;
+        const page = path.replace(base + "lv/", "");
+        window.location.href = base + page;
     };
-}
-else {
+
+} else {
+
+    // Currently on English page
     btn.textContent = "LV";
 
     btn.onclick = () => {
-        const page = path.split("/").pop();
-        window.location.href = "lv/" + page;
+        const page = path.replace(base, "");
+        window.location.href = base + "lv/" + page;
     };
+
 }
