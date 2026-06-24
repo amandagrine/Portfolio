@@ -1,1 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="portfolio.css">
+    </head>
+    <body>
+        <div id="navbar"></div>
 
+        <script>
+       fetch("navbar.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("navbar").innerHTML = data;
+
+                const script = document.createElement("script");
+                script.src = "language.js";
+                document.body.appendChild(script);
+            });
+        </script>
+
+        <header class = "container">Fotografēšana</header>
+         <div class = "text container">
+           Šeit ir daži attēli, kurus uzņēmu un rediģēju programmā Affinity Photo, saistīti ar tēmu Laiks.
+           <br><br>
+        Pirmā fotogrāfija attēlo to sajūtu, kad jūties iesprūdis uz vietas.
+        Bilde ataino, kā pilnīgi visu citu dzīves nemitīgi rit uz priekšu, taču
+        meitene attēla vidū jūtas iestrēgusi, nespēdama atrast savu vietu pasaulē.
+        <br><br>
+        Nākamais foto attēlo "īsto brīdi īstajā laikā". Man bija šī negaidītā iespēja
+        nofotografēt divus kaķus - vienu uzgleznotu un vienu īstu, kuri abi sēdēja vienā un
+           tajā pašā pozā. Šī fotogrāfija parāda to, cik liela nozīme ir laikam un īstā brīža noķeršanai.
+        <br><br>
+        Trešais attēls tika uzņemts kapsētā. Tajā ir redzami vairāki kapakmeņi, kas pieder daudz dažādiem cilvēkiem, kas kādreiz dzīvoja uz
+           mūsu pasaules. Foto attēlo to, ka katra cilvēka laiks uz Zemes ir ierobežots, simbolizējot to, ka nekas nav mūžīgs.
+        <br><br>
+
+        
+            <img class = "about-pic" src = "/Portfolio/media/time1.jpg"  alt="Time1">
+            <br>
+        <div class = "gallery">
+            <img class = "pic-gallery" src = "/Portfolio/media/time2.jpg"  alt="Time2">
+            <img class = "pic-gallery" src = "/Portfolio/media/time3.jpg"  alt="Time3">
+        </div>
+
+        </div>
+         <p class = "back container"><a href = "art.html">Atpakaļ</a></p>
+
+         <footer>
+            <p class = "contact-me"><strong>Mani kontakti:</strong></p>
+            <p>grine.amanda@gmail.com</p>
+        </footer>
+    </body>
+</html>
