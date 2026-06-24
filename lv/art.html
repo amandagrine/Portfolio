@@ -1,1 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="portfolio.css">
+    </head>
+    <body>
+       <div id="navbar"></div>
 
+        <script>
+       fetch("navbar.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("navbar").innerHTML = data;
+
+                const script = document.createElement("script");
+                script.src = "language.js";
+                document.body.appendChild(script);
+            });
+        </script>
+
+        <header class = "container">Māksla & Dizains</header>
+        <div class = "text container">
+            <div class="row">
+                <div class="column">
+                     <img class = "columnpic" src = "/Portfolio/media/albumcoverfirst.png"  alt="Album Cover">
+                </div>
+                <div class="column">
+                    <h2>Redesigning an Album Cover</h2>
+                    <p>I redesigned the cover of David Bowie’s album Reality, designed by Jonathan 
+                        Barnbrook and Rex Ray. The songs on this album follow the theme of a shifting 
+                        and abstract reality, which has been creatively illustrated on the original 
+                        cover of the album, depicting...</p>
+                    <p><a href = "albumcover.html">Keep reading</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class = "text container">
+            <div class="row">
+                <div class="column">
+                     <img class = "columnpic" src = "/Portfolio/media/logotypes.jpeg"  alt="Album Cover">
+                </div>
+                <div class="column">
+                    <h2>Logotypes</h2>
+                    <p>In Affinity Designer I created three logotypes for an imaginary record company 
+                        called “Deluxe Recordings”.
+                    For the first logo I decided to do something simple. I designed the lines of an audio 
+                    spectrum and used a dark blue color for the letters to symbolize...</p>
+                    <p><a href = "logotypes.html">Keep reading</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class = "text container">
+            <div class="row">
+                <div class="column">
+                     <img class = "columnpic" src = "/Portfolio/media/time1.jpg"  alt="Album Cover">
+                </div>
+                <div class="column">
+                    <h2>Photography</h2>
+                    <p>Here are some photos I took and then edited in Affinity Photo, 
+                        that are based on the theme of Time.
+
+                    The idea of the first photo was to illustrate the feeling of being 
+                    stuck in time. The image depicts how everybody else’s lives seem 
+                    to be going forward, whereas the girl...</p>
+                    <p><a href = "photography.html">Keep reading</a></p>
+                </div>
+            </div>
+        </div>
+            
+         <footer>
+            <p class = "contact-me"><strong>Contact me:</strong></p>
+            <p>grine.amanda@gmail.com</p>
+        </footer>
+    </body>
+</html>
