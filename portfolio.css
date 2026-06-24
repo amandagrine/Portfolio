@@ -221,6 +221,10 @@ audio {
     text-decoration: none;
 }
 
+.back a:hover {
+    text-decoration: none;
+}
+
 h2 {
     text-align: left;
 }
