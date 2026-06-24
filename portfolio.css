@@ -217,7 +217,7 @@ audio {
     color: white;
 }
 
-.text, .back a:hover {
+.text a:hover {
     text-decoration: none;
 }
 
