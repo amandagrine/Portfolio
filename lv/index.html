@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="portfolio.css">
+    </head>
+    <body>
+       <div id="navbar"></div>
+
+        <script>
+        fetch("navbar.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("navbar").innerHTML = data;
+            });
+        </script>
+
+        <section class="hero container">
+        
+            <div class="hero-text">
+                <h3>Mani sauc Amanda</h3>
+        
+                <h1>ES ESMU<br>MULTIMĒDIJU<br>DIZAINERE </h1>
+        
+                <a href="#projects" class="btn">Apskati Manus Projektus</a>
+            </div>
+        
+            <div class="hero-image">
+                <div class="glow"></div>
+                <img src="/Portfolio/media/webportfolio.jpg" alt="Profile">
+            </div>
+        
+        </section>
+        <section id = "projects">
+            <header class = "container homeh2">Projekti</header>
+            <div class="row-three container">
+            <a href="art.html" style="display: block; text-decoration: none; color: inherit;">
+              <div class="column-three zoom">
+                  <img class = "columnpic" src = "/Portfolio/media/albumcoverfirst.png"  alt="Album Cover">
+                  <h2 class = "homeh2">Māksla & Dizains</h2>
+              </div>
+            </a>
+            <a href="music.html" style="display: block; text-decoration: none; color: inherit;">
+              <div class="column-three zoom">
+                  <img class = "columnpic" src = "/Portfolio/media/generativeperformance.png"  alt="Album Cover">
+                  <h2 class = "homeh2">Mūzika & Skaņa</h2>
+              </div>
+            </a>
+            <a href="video.html" style="display: block; text-decoration: none; color: inherit;">
+              <div class="column-three zoom">
+                  <img class = "columnpic" src = "/Portfolio/media/claymation.jpg"  alt="Album Cover">
+                  <h2 class = "homeh2">Video</h2>
+              </div>
+            </a>
+            </div>
+        </section>
+         <footer>
+            <p class = "contact-me"><strong>Mani kontakti:</strong></p>
+            <p>grine.amanda@gmail.com</p>
+        </footer>
+    </body>
+</html>
