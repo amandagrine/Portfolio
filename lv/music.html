@@ -1,1 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="portfolio.css">
+    </head>
+    <body>
+        <div id="navbar"></div>
 
+        <script>
+       fetch("navbar.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("navbar").innerHTML = data;
+
+                const script = document.createElement("script");
+                script.src = "language.js";
+                document.body.appendChild(script);
+            });
+        </script>
+
+        <header class = "container">Mūzika & Skaņa</header>
+        <div class = "text container">
+            <div class="row">
+                <div class="column">
+                     <img class = "columnpic" src = "/Portfolio/media/liveperformance.jpg"  alt="Keyboard Picture">
+                </div>
+                <div class="column">
+                    <h2>Live Performance</h2>
+                    <p>I composed a piece in Ableton and performed it live using Ableton's Session View. My idea was to 
+                     create a piece with an ambient, atmospheric background and a quite repetitive melody in the 
+                     foreground, to keep the main focus on the different effects that 
+                     would be changed and...</p>
+                    <p><a href = "liveperformance.html">Keep reading</a></p>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class = "text container">
+            <div class="row">
+                <div class="column">
+                     <img class = "columnpic" src = "/Portfolio/media/sequencer.png"  alt="Album Cover">
+                </div>
+                <div class="column">
+                    <h2>Creative Sequencer</h2>
+                    <p>In MaxMSP I created a MIDI note sequencing system that connects to Ableton and 
+                        can be controlled using the Oxygen 25 controller.
+
+                        I created a simple 16-step sequencer and added some complex features to it, 
+                        trying to increase its unpredictability. The sequencer has a...</p>
+                    <p><a href = "sequencer.html">Keep reading</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class = "text container">
+            <div class="row">
+                <div class="column">
+                     <img class = "columnpic" src = "/Portfolio/media/generativeperformance.png"  alt="Album Cover">
+                </div>
+                <div class="column">
+                    <h2>Generative Performance System</h2>
+                    <p> I created a generative performance system in Ableton, using both looped 
+            audio recordings and MIDI instruments.
+            I built a harmonic melody in C Major using MIDI effects like Scale and generated clips, 
+            and added...</p>
+                    <p><a href = "generativeperformancesystem.html">Keep reading</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class = "text container">
+            <div class="row">
+                <div class="column">
+                     <img class = "columnpic" src = "/Portfolio/media/moonfront.jpg"  alt="Moon">
+                </div>
+                <div class="column">
+                    <h2>Sound Editing</h2>
+                    <p>During Halloween season, I decided to record myself reading a short horror story.
+                         I have always loved horror movies with good jump-scares, therefore I wanted 
+                         to create a similar effect, but with audio. My aim was to add sound effects 
+                         and music to the story, that would allow the listener to...</p>
+                    <p><a href = "soundediting.html">Keep reading</a></p>
+                </div>
+            </div>
+        </div>
+            
+         <footer>
+            <p class = "contact-me"><strong>Mani kontakti:</strong></p>
+            <p>grine.amanda@gmail.com</p>
+        </footer>
+    </body>
+</html>
