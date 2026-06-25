@@ -1,1 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="portfolio.css">
+    </head>
+    <body>
+        <div id="navbar"></div>
 
+        <script>
+        fetch("navbar.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("navbar").innerHTML = data;
+            });
+        </script>
+
+        <header class = "container">Audio rediģēšana</header>
+         <div class = "text container">
+           Helovīnu laikā es vēlējos ierakstīt, kā lasu īsu šausmu stāstu. Man vienmēr ļoti ir patikušas
+           šausmu filmas ar labiem "jump-scares", tāpēc gribēju radīt līdzīgu efektu, tikai ar audio.
+           Mans mērķis bija savu lasījumu papildināt ar dažādiem skaņu efektiem un mūziku, kas ļautu
+           klausītājam aizvērt acis un sajusties tā, it kā atrastos turpat, blakus galvenajam varonim,
+           piedzīvojot tās pašas bailes un šausmas.
+            <br><br>
+            Stāsts, ko izvēlējos, ir Džesikas Roudas "The Cabin". Es centos dažus efektus ierakstīt pati, taču pārējos atradu Youtube.
+           Arī izmantoju ErikMMusic mūziku.
+            <br><br>
+            Šis audio tika rediģēts programmā Audacity.
+            <br><br>
+            
+            <div class = "video">
+                <iframe 
+                    src="https://www.youtube.com/embed/VQZZw0RH6p8"
+                    frameborder="0"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+         <p class = "back container"><a href = "music.html">Atpakaļ</a></p>
+
+         <footer>
+            <p class = "contact-me"><strong>Mani kontakti:</strong></p>
+            <p>grine.amanda@gmail.com</p>
+        </footer>
+    </body>
+</html>
