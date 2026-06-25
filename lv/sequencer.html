@@ -1,1 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="portfolio.css">
+    </head>
+    <body>
+        <div id="navbar"></div>
 
+        <script>
+       fetch("navbar.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("navbar").innerHTML = data;
+
+                const script = document.createElement("script");
+                script.src = "language.js";
+                document.body.appendChild(script);
+            });
+        </script>
+
+        <header class = "container">Radošais Sekvenceris</header>
+        <img class = "about-pic container" src = "/Portfolio/media/sequencer.png"  alt="Sequencer Picture">
+         <div class = "text container">
+           Pielietojot MaxMSP es izveidoju MIDI nošu sekvences sistēmu, kas savienojas ar Ableton un var 
+           tikt kontrolēta ar Oxygen 25 kontrolieri.
+            <br><br>
+           Es izveidoju vienkāršu 16 soļu sekvenceri un pievienoju tam vairākas sarežģītas funkcijas, cenšoties palielināt tā
+           neparedzamību. Sekvencerim ir laika sistēma, kas izmanto GlobalTransport, transponēšanas sistēma un uz varbūtību balstītas sistēmas.
+             <br><br>
+            Lietotājs var 
+            The user can change parameters like the minimum and maximum values of the sequencer, 
+            the direction of the sequence, mode and pattern of a sequence jump. The symmetry and 
+            panning of the audio also can be modified. To introduce even more unpredictable outcomes, 
+            the user can add a possibility of a mute or a transposition. <br><br>
+
+            I also used the presentation mode for my sequencer and properly commented each feature 
+            to ensure that even someone who is not familiar with this software can easily interact 
+            with the sequencer. <br><br><br>
+        
+            <div class = "video">
+                <iframe 
+                    src="https://www.youtube.com/embed/BSIg84cM9to"
+                    frameborder="0"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+         <p class = "back container"><a href = "music.html">Atpakaļ</a></p>
+
+         <footer>
+            <p class = "contact-me"><strong>Mani kontakti:</strong></p>
+            <p>grine.amanda@gmail.com</p>
+        </footer>
+    </body>
+</html>
