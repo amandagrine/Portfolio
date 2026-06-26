@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="portfolio.css">
+    </head>
+    <body>
+        <div id="navbar"></div>
+
+        <script>
+        fetch("navbar.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("navbar").innerHTML = data;
+
+                const script = document.createElement("script");
+                script.src = "language.js";
+                document.body.appendChild(script);
+            });
+        </script>
+
+        <header class = "container">Dzīvais izpildījums</header>
+        <img class = "about-pic container" src = "/Portfolio/media/liveperformance.jpg"  alt="keyboard Picture">
+         <div class = "text container">
+           Programmā Ableton es sakomponēju skaņdarbu un izpildīju to dzīvajā izmantojot programmas "Session View".
+           Mana doma aiz šī mūzikas gabala bija izveidot skaņdarbu ar ambientu, atmosfērisku fonu un ar melodiju priekšplānā,
+           kas lielā mērā atkārtojas viscaur šim skaņdarbam, tādā veidā lielāko uzmanību pievēršot dažādiem efektiem, kas tiktu mainīti 
+           un pielāgoti, kamēr uzstājos.
+            <br><br>
+             While composing the piece, I was inspired by Sampa The Great, especially her song <i>Healing</i>, which
+            contains many interesting sounds and textures. I used some of her techniques in my piece as well,
+            for instance, slowly introducing or stopping each instrument at the start or end of the song, and
+            panning instruments to make the song more immersive. <br><br>
+             Because I am very interested in movie sound design, another thing I wanted to do was
+            try to create different natural sounds in Ableton (wind, raindrops, storm and thunder) from scratch.
+             Although it took quite a while to get them to sound realistic, I really enjoyed the process. 
+             So, my piece is designed to feel like you’re listening to music in
+            the middle of a storm. It begins with wind and a few raindrops, gradually building in intensity as the
+            sound becomes more charged and electrified. Then lightning and thunder break through, and the
+            energy slowly dissolves as the storm passes and everything settles again.
+             
+             <br><br><br>
+
+        
+            <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay; encrypted-media" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2345577578&color=%235c605e&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/amamamanda0017" title="Amanda" target="_blank" style="color: #cccccc; text-decoration: none;">Amanda</a> · <a href="https://soundcloud.com/amamamanda0017/live-performance" title="live performance" target="_blank" style="color: #cccccc; text-decoration: none;">live performance</a></div>
+
+        </div>
+         <p class = "back container"><a href = "music.html">Atpakaļ</a></p>
+
+         <footer>
+            <p class = "contact-me"><strong>Mani kontakti:</strong></p>
+            <p>grine.amanda@gmail.com</p>
+        </footer>
+    </body>
+</html>
