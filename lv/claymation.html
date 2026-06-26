@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="portfolio.css">
+    </head>
+    <body>
+        <div id="navbar"></div>
+
+        <script>
+        fetch("navbar.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("navbar").innerHTML = data;
+
+                const script = document.createElement("script");
+                script.src = "language.js";
+                document.body.appendChild(script);
+            });
+        
+        </script>
+
+        <header class = "container">Stopkadru animācija</header>
+         <div class = "text container">
+           Es vienmēr esmu bijusi ieinteresēta filmās un animācijās, tāpēc izmēģināju pati izveidot stopkadru īsfilmu "The Seed" 
+           (latviski - sēkla). 
+            I have always been interested in movies and animation, so 
+            I tried to make a stop motion short film “The Seed”. Šis process ietvēra scenārija rakstīšanu, 
+           tēlu dizainu, dekorāciju veidošanu, fotografēšanu kadru pa kadram, kā arī montāžu, apvienojot 
+           manas prasmes stāstu stāstīšanā, vizuālajā mākslā un tehniskajā aspektā.
+  <br><br>
+            Tā kā man nebija pieejams nekāds profesionālais aprīkojums, animācijas tehniskā puse diemžēl nav izcila.
+           Es centos iegūt pēc iespējas labāko rezultātu ar resursiem, kas man bija pieejami tobrīd. 
+           Beigu beigās mans mērķis šim projektam nebija radīkt profesionālu stopkadru animāciju, bet gan 
+           izmēģināt dažādas mākslinieciskās tehnikas, būt radošai un iemācīties kaut ko jaunu.
+           <br><br>
+        
+            <div class = "video container">
+                <iframe 
+                    src="https://www.youtube.com/embed/jUQz8sjOsFc"
+                    frameborder="0"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+         <p class = "back container"><a href = "video.html">Atpakaļ</a></p>
+
+         <footer>
+            <p class = "contact-me"><strong>Mani kontakti:</strong></p>
+            <p>grine.amanda@gmail.com</p>
+        </footer>
+    </body>
+</html>
