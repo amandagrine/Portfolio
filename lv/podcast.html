@@ -1,1 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="portfolio.css">
+    </head>
+    <body>
+        <div id="navbar"></div>
 
+        <script>
+       fetch("navbar.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("navbar").innerHTML = data;
+
+                const script = document.createElement("script");
+                script.src = "language.js";
+                document.body.appendChild(script);
+            });
+        </script>
+
+        <header class = "container">Mākslīgais intelekts mūzikā</header>
+         <div class = "text container">
+           Es un mani kursabiedri nofilmējām un samontējām video par tēmu saistītu ar digitālajiem medijiem.
+           Tēma, ko izvēlējāmies, bija Mākslīgais Intelekts Mūzikā
+            <br><br>
+            Tā kā MI kļūst arvien populārāks, mūzikas platformas kā Spotify ir sākušas veidot
+           MI mūziķus, sauktus par "spoku mūziķiem". Šo mākslinieku mūzika tiek pievienota 
+           populārām plejlistēm, tādā veidā iegūstot vairāk uzmanības un klausījumu no Spotify lietotājiem.
+           Tomēr tas rada diskusiju par to, vai dziesmām, ko pilnībā radījis mākslīgais intelekts, 
+           vajadzētu piesaistīt sabiedrības uzmanību, jo tām trūkst radošuma un emociju, un tās rada 
+           ekonomiskus draudus cilvēku māksliniekiem.<br><br>
+
+            Tāpēc mēs nolēmām izveidot iedomātu podkāstu, kurā viesis ir mūziķis, kas izmanto Spotify
+           savas mūzikas publicēšanai, 
+           kurš dalās savā viedoklī par mākslīgo intelektu mūzikā un mūzikas platformās.<br><br>
+        
+            <div class = "video">
+                <iframe 
+                    src="https://www.youtube.com/embed/wXkneuqlYGw"
+                    frameborder="0"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+         <p class = "back container"><a href = "video.html">Atpakaļ</a></p>
+
+         <footer>
+            <p class = "contact-me"><strong>Mani kontakti:</strong></p>
+            <p>grine.amanda@gmail.com</p>
+        </footer>
+    </body>
+</html>
