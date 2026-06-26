@@ -1,1 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="portfolio.css">
+    </head>
+    <body>
+        <div id="navbar"></div>
 
+        <script>
+        fetch("navbar.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("navbar").innerHTML = data;
+
+                const script = document.createElement("script");
+                script.src = "language.js";
+                document.body.appendChild(script);
+            });
+        
+        </script>
+
+        <header class = "container">Short Film</header>
+         <div class = "text container">
+           I created a short film called "A Hard Pearl To Swallow". I co-wrote the script for the movie, played one of the main parts
+           and edited it. The editing process involved cutting and arranging the videos, adding music and sound effects
+           and editing sound. I also used the technique of having the same actor playing two different characters that are shown on the
+           screen at the same time, which was quite complex and required professional setting when shooting the video, as well as
+          overlapping the two different videos to make it seem like the characters were truly talking to each other.
+           <br><br>
+           The movie starts with a little girl whose mother dies of an illness, leaving the little girl all alone. 
+           Bit before passing away, her mother gives the little girl a mysterious pearl and an envelope that she is only supposed to open
+           30 years later. Meanwhile on a different planet accross the universe another story is being told of an alien girl, who struggles
+           to find food and is close to starvation. Turns out that the little girl on Earth and the alien girl have something in common - 
+           they both need the pearl to survive.
+          <br><br>
+           The movie itself is 20 minutes long, but below I have posted a 3 minute video featuring clips from the movie.
+        
+           <br><br>
+        
+            <div class = "video container">
+                <iframe 
+                    src="https://www.youtube.com/embed/jUQz8sjOsFc"
+                    frameborder="0"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+         <p class = "back container"><a href = "video.html">Go Back</a></p>
+
+         <footer>
+            <p class = "contact-me"><strong>Contact me:</strong></p>
+            <p>grine.amanda@gmail.com</p>
+        </footer>
+    </body>
+</html>
