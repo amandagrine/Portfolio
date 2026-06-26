@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="portfolio.css">
+    </head>
+    <body>
+        <div id="navbar"></div>
+
+        <script>
+        fetch("navbar.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("navbar").innerHTML = data;
+
+                const script = document.createElement("script");
+                script.src = "language.js";
+                document.body.appendChild(script);
+            });
+        
+        </script>
+
+        <header class = "container">Īsfilma</header>
+         <div class = "text container">
+           Es izveidoju īsfilmu "A Hard Pearl To Swallow". Es 
+           I created a short film called "A Hard Pearl To Swallow". Es kopīgi sarakstīju scenāriju, spēlēju
+           vienā no galvenajām lomām, un montēju video. Montāžas process ietvēra video apgriešanu un sakārtošanu pareizā
+           secībā, mūzikas un skaņu efektu pievienošanu un skaņas rediģēšanu. Filmā arī tika izmantota tehnika, kurā viens
+           un tas pats aktieris attēlo divus dažādus tēlus, kas parādās uz ekrāna vienlaicīgi. Tas bija diezgan sarežģīti un
+           prasīja profesionālu aprīkojumu video filmēšanas laikā, kā arī es ieguvu jaunu prasmi pārklāt divus dažādus video, 
+           radot iespaidu, ka šie divi tēli patiešām viens ar otru sarunājas.
+           <br><br>
+           Filma sākas ar mazu meitenīti, kuras māte ir smagi saslimusi. Pirms nāves, meitenītes māte viņai 
+           uzdāvina mistērisku pērli un aploksni, kuru meitene drīkst atvērt tikai 30 gadus vēlāk. Tikmēr uz citas planētas pāri
+           visam Visumam tiek stāstīts vēl viens stāsts par citplanētiešu meiteni, kura nespēj atrast sev pārtiku un cieš no bada.
+           Izrādās, ka mazajai meitenītei uz Zemes un citplanētiešu meitenei abām ir kas kopīgs - viņām vajag pērli, lai izdzīvotu. 
+           
+          <br><br>
+           Filma kopā ir 20 minūtes gara, taču zemāk iespējams apskatīties īsu 3 minūšu video ar klipiem no filmas.
+        
+           <br><br>
+        
+            <div class = "video container">
+                <iframe 
+                    src="https://www.youtube.com/embed/kg4k21-wtto"
+                    frameborder="0"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+         <p class = "back container"><a href = "video.html">Atpakaļ</a></p>
+
+         <footer>
+            <p class = "contact-me"><strong>Mani kontakti:</strong></p>
+            <p>grine.amanda@gmail.com</p>
+        </footer>
+    </body>
+</html>
