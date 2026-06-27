@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="portfolio.css">
+    </head>
+    <body>
+        <div id="navbar"></div>
+
+        <script>
+       fetch("navbar.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("navbar").innerHTML = data;
+
+                const script = document.createElement("script");
+                script.src = "language.js";
+                document.body.appendChild(script);
+            });
+        </script>
+
+        <header class = "container">Magazine</header>
+         <div class = "text container">
+           I created a 20 page magazine designed as a printed gift in Affinity. It was inspired by the Latvian children's
+           educational magazine "Illustretā Junioriem".  
+           <br><br>
+           This process involved many steps. At first, I had to come up with multiple different topics for the articles in
+           my magazine. When the draft was ready, I continued with in-depth research, gathering information
+           and interesting facts about each topic. Then I had to combine the information from multiple sources into a coherent whole
+           and ensure that each story has a logical flow. When the text was ready, I began creating the design. It involved photo
+           editing, developing editorial layout, typography and illustrations, and creating print-ready production files.
+           <br><br>
+           This was a very interesting and unique project for me, and I improved my design skills and 
+           I gained knowledge about creating art that is meant for printing.
+         
+           <br><br>
+
+        
+            <img class = "about-pic" src = "/Portfolio/media/time1.jpg"  alt="Time1">
+            <br>
+        <div class = "gallery">
+            <img class = "pic-gallery" src = "/Portfolio/media/time2.jpg"  alt="Time2">
+            <img class = "pic-gallery" src = "/Portfolio/media/time3.jpg"  alt="Time3">
+        </div>
+
+        </div>
+         <p class = "back container"><a href = "art.html">Go Back</a></p>
+
+         <footer>
+            <p class = "contact-me"><strong>Contact me:</strong></p>
+            <p>grine.amanda@gmail.com</p>
+        </footer>
+    </body>
+</html>
